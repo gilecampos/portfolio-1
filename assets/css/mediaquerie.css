@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #8A2BE2;
+  --brand-color-second: #D24074;
+  --dark: #000;
+  --dark--10: #121212;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__hamburger {
+    display: none;
+  }
+
+  .menu__items {
+    display: flex;
+    gap: 62px;
+    height: auto;
+    visibility: visible;
+    position: unset;
+  }
+
+  .menu__link {
+    border: 0;
+    position: relative;
+  }
+
+  .menu__link::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--brand-color);
+
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    transition: .3s;
+  }
+
+  .menu__link:hover::after {
+    width: 70%;
+  }
+}

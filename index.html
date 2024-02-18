@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaquerie.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__flex">
+      <a href="#" class="header__brand">Portfólio</a>
+      <nav class="menu">
+        <button 
+          type="button" 
+          class="menu__hamburger" 
+          data-js="btn-hamburger"
+          aria-expanded="false"
+          aria-controls="menu__items"
+          aria-haspopup="true"
+          aria-label="Abrir Menu"
+        >
+          <span class="menu__hamburger-lines"></span>
+        </button>
+        <ul 
+          class="menu__items" 
+          id="menu__items"
+          role="menu"
+        >
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About me</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Experience</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
