@@ -27,6 +27,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1366px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
 /* CSS UTILITIES */
 
 .header {
