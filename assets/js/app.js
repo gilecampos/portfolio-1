@@ -7,7 +7,7 @@ const toggleNavbar = (event) => {
   }
 
   const navbarActive = navbar.classList.toggle("active")
-  const ariaLabelTag = navbarActive ? "Fechar menu" : "Abrir menu"
+  const ariaLabelTag = navbarActive ? "Close menu" : "Open menu"
 
   event.currentTarget.setAttribute('aria-expanded', navbarActive)
   event.currentTarget.setAttribute('aria-label', ariaLabelTag)
