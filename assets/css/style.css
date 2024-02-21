@@ -33,6 +33,42 @@ body {
   }
 }
 
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.inter-semi-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
 /* CSS UTILITIES */
 
 .header {
@@ -54,7 +90,6 @@ body {
 
 .header__brand {
   text-decoration: none;
-  font-weight: bold;
   font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   color: var(--brand-color);
 }
@@ -113,7 +148,6 @@ body {
 
 .menu__link {
   text-decoration: none;
-  font-family: sans-serif;
   font-size: 1.8rem;
   color: #fff;
   padding: 1.5rem 0;
