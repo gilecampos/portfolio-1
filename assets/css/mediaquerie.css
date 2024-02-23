@@ -12,6 +12,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  /* UTILITIES */
+  .button {
+    gap: 16px;
+    padding: 16px 42px;
+  }
+  /* MENU */
   .menu__hamburger {
     display: none;
   }
@@ -43,5 +49,32 @@
 
   .menu__link:hover::after {
     width: 70%;
+  }
+
+  /* INTRODUCTION */
+  .introduction {
+    padding: 40px 0;
+    height: calc(100vh - 110px);
+    background-image: url(../img/figures-rounded.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+  }
+
+  .introduction__content {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+  }
+
+  .introduction__title {
+    margin: 12px 0;
+  }
+
+  .introduction__buttons {
+    flex-direction: row;
+    margin-top: 60px;
   }
 }
