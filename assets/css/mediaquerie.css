@@ -53,7 +53,7 @@
 
   /* INTRODUCTION */
   .introduction {
-    padding: 40px 0;
+    padding: 50px 0 40px;
     height: calc(100vh - 110px);
     background-image: url(../img/figures-rounded.svg);
     background-repeat: no-repeat;
@@ -77,4 +77,48 @@
     flex-direction: row;
     margin-top: 60px;
   }
+
+  /* ABOUT */
+  .about {
+    padding: 40px 0;
+    height: 100vh;
+  }
+
+  .about .flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .about__photo {
+    display: block;
+    flex: 1 0 0;
+  }
+
+  .about__content {
+    flex: 1 0 0;
+  }
+
+  .about__address {
+    margin: 40px 0 21px;
+  }
+
+  .about__buttons {
+    display: flex;
+    gap: 48px;
+  }
+
+  .about__buttons .button--purple {
+    display: flex;
+    flex: 1 0 0;
+  }
+
+  .about__buttons .button--crimson {
+    display: flex;
+    flex: 1 0 0;
+  }
+
+
+
+
 }

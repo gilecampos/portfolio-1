@@ -38,6 +38,22 @@ a {
   }
 }
 
+.title__section {
+  font-size: 2.4rem;
+  color: #fff;
+  max-width: max-content;
+  position: relative;
+}
+
+.title__section::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 40%;
+  height: 5px;
+  background-color: var(--brand-color);
+}
+
 .inter-bold {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -284,5 +300,53 @@ i.bi {
   width: 100%;
 }
 
+/* ABOUT */
+.about {
+  padding: 40px 0 30px;
+}
 
+.about .container {
+  height: 100%;
+}
 
+.about__photo {
+  display: none;
+}
+
+.about__photo img {
+  max-width: 100%;
+}
+
+.about__address {
+  color: #fff;
+  font-size: clamp(1.6rem, 1.5vw, 2rem);
+
+  margin: 16px 0 8px;
+}
+
+.about__description {
+  color: #C4C4C4;
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+  line-height: 170%;
+}
+
+.about__socials {
+  display: flex;
+  gap: 36px;
+  margin: 32px 0;
+}
+
+.about__socials i {
+  color: var(--brand-color);
+  font-size: clamp(2.4rem, 3.5vw, 3.2rem);
+
+  transition: all .3s ease;
+}
+
+.about__socials i:is(:hover, :active) {
+  color: var(--brand-color-second);
+}
+
+.about__buttons .button--purple {
+  display: none;
+}
