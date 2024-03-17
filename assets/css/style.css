@@ -9,6 +9,7 @@
   --brand-color-second: #D24074;
   --dark: #000;
   --dark--10: #121212;
+  --dark--20: #151515;
 }
 
 html {
@@ -303,6 +304,7 @@ i.bi {
 /* ABOUT */
 .about {
   padding: 40px 0 30px;
+  background-color: var(--dark--20);
 }
 
 .about .container {
@@ -349,4 +351,98 @@ i.bi {
 
 .about__buttons .button--purple {
   display: none;
+}
+
+/* EXPERIENCE */
+.experience {
+  padding: 40px 0;
+  background-color: var(--dark--10);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience .container.grid {
+  max-width: 100%;
+  padding-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.works {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+  overflow-x: scroll;
+
+  margin-top: 24px;
+  padding: 0 0 32px;
+}
+
+.works::-webkit-scrollbar {
+	height: 6px;
+}
+
+.works::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+.works__item {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+  color: #c4c4c4;
+  list-style: none;
+}
+
+.works__item.active {
+  background-color: var(--dark--20);
+  color: #fff;
+  position: relative;
+}
+
+.works__item.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--brand-color);
+}
+
+.works-info {
+  padding: 0 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.works-info__occupation {
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  color: #fff;
+}
+
+.works-info .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-info__company {
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+  line-height: 150%;
+  color: var(--brand-color);
+}
+
+.works-info__date {
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
+  line-height: 160%;
+  color: #fff;
+}
+
+.works-info__description {
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+  line-height: 150%;
+  color: #c4c4c4;
 }

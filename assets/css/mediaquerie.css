@@ -118,7 +118,36 @@
     flex: 1 0 0;
   }
 
+  /* EXPERIENCE */
+  .experience {
+    height: 100vh;
+  }
 
+  .experience .container.grid {
+    max-width: 90%;
+    grid-template-columns: 150px 1fr;
+    gap: 80px;
+    padding: unset;
+    margin-top: 26px;
+  }
 
+  .experience .works {
+    flex-direction: column;
+    margin-top: 0;
+  }
 
+  .works__item.active::after {
+    left: 0;
+    top: 0;
+    bottom: -10px;
+    height: 100%;
+    width: 2px;
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+  .experience .container.grid {
+    max-width: 1080px;
+  }
 }
